@@ -5,7 +5,7 @@ services:
     container_name: sentinel-postgres
     environment:
       POSTGRES_USER: sentinel
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-sentinel_dev_password}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD before starting Compose}
       POSTGRES_DB: sentinel_ai
     ports:
       - "127.0.0.1:5432:5432"
