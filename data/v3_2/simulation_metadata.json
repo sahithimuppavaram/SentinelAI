@@ -1,0 +1,11 @@
+{
+  "version": "v3.2",
+  "seed": 84,
+  "base_version": "v3.1",
+  "total_events": 13728,
+  "risk_events": 631,
+  "incidents": 140,
+  "new_risky_workflows": 120,
+  "new_legitimate_workflows": 120,
+  "note": "Synthetic educational dataset. Scenario labels do not imply verified malicious behavior."
+}

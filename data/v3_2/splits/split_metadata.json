@@ -1,0 +1,32 @@
+{
+  "dataset": "v3.2",
+  "train_cutoff": "2026-09-19T00:00:00+00:00",
+  "validation_cutoff": "2026-09-25T00:00:00+00:00",
+  "strategy": "Chronological workflow-level splitting with delayed training label availability",
+  "partitions": {
+    "train": {
+      "events": 7271,
+      "risk_events": 353,
+      "incidents": 76,
+      "workflows": 6795
+    },
+    "validation": {
+      "events": 2778,
+      "risk_events": 120,
+      "incidents": 27,
+      "workflows": 2608
+    },
+    "test": {
+      "events": 2780,
+      "risk_events": 108,
+      "incidents": 26,
+      "workflows": 2572
+    },
+    "excluded": {
+      "events": 899,
+      "risk_events": 50,
+      "incidents": 11,
+      "workflows": 846
+    }
+  }
+}

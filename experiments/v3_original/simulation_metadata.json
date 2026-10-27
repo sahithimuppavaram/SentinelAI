@@ -1,0 +1,11 @@
+{
+  "version": "v3",
+  "seed": 42,
+  "employees": 100,
+  "agents": 20,
+  "days": 30,
+  "total_events": 12673,
+  "risk_events": 60,
+  "incidents": 20,
+  "note": "Synthetic educational data; not validated security data"
+}

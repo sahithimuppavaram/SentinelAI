@@ -1,0 +1,107 @@
+{
+  "logistic_regression": {
+    "validation": {
+      "average_precision": 0.4649042047139295,
+      "threshold": 0.9856079910021802,
+      "alerts": 55,
+      "precision": 0.5272727272727272,
+      "recall": 0.24166666666666667,
+      "f1": 0.3314285714285714,
+      "false_alerts_per_1000": 9.359251259899208,
+      "confusion_matrix": [
+        [
+          2632,
+          26
+        ],
+        [
+          91,
+          29
+        ]
+      ]
+    }
+  },
+  "xgboost": {
+    "validation": {
+      "average_precision": 0.4669347220960859,
+      "threshold": 0.9579066932201385,
+      "alerts": 55,
+      "precision": 0.5818181818181818,
+      "recall": 0.26666666666666666,
+      "f1": 0.3657142857142857,
+      "false_alerts_per_1000": 8.27933765298776,
+      "confusion_matrix": [
+        [
+          2635,
+          23
+        ],
+        [
+          88,
+          32
+        ]
+      ]
+    }
+  },
+  "selected_model": "xgboost",
+  "selected_test_metrics": {
+    "average_precision": 0.34791593634476176,
+    "threshold": 0.9579066932201385,
+    "alerts": 86,
+    "precision": 0.3953488372093023,
+    "recall": 0.3148148148148148,
+    "f1": 0.35051546391752575,
+    "false_alerts_per_1000": 18.70503597122302,
+    "confusion_matrix": [
+      [
+        2620,
+        52
+      ],
+      [
+        74,
+        34
+      ]
+    ]
+  },
+  "selected_test_scenarios": {
+    "scenario_counts": {
+      "approved_bulk_operation": {
+        "events": 163,
+        "positives": 0,
+        "alerts": 52
+      },
+      "authorized_bulk_misuse": {
+        "events": 90,
+        "positives": 90,
+        "alerts": 29
+      },
+      "authorized_misuse": {
+        "events": 6,
+        "positives": 6,
+        "alerts": 2
+      },
+      "benign_policy_exception": {
+        "events": 32,
+        "positives": 0,
+        "alerts": 0
+      },
+      "legitimate_unusual": {
+        "events": 102,
+        "positives": 0,
+        "alerts": 0
+      },
+      "permission_violation": {
+        "events": 12,
+        "positives": 12,
+        "alerts": 3
+      },
+      "routine": {
+        "events": 2375,
+        "positives": 0,
+        "alerts": 0
+      }
+    },
+    "risk_events_detected": 34,
+    "total_risk_events": 108,
+    "incidents_detected": 15,
+    "total_incidents": 26
+  }
+}
